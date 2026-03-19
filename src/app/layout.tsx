@@ -9,7 +9,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   viewportFit: "cover",
-  themeColor: "#0f172a",
+  themeColor: "#08090c",
 };
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default function RootLayout({
       className={`${montserrat.variable} ${greatVibes.variable} h-full antialiased`}
     >
       <body
-        className={`${montserrat.className} flex min-h-dvh flex-col bg-[#0f172a] text-slate-100 antialiased`}
+        className={`${montserrat.className} flex min-h-dvh flex-col bg-[#0d1017] text-[#f0ebe3] antialiased`}
       >
         <Header />
         <main className="min-w-0 flex-1">{children}</main>

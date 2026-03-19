@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { galleryItems } from "@/lib/gallery";
 
-/** Detail shots for the services page (indices into `galleryItems`, which starts at 02.png) */
 const idx = [0, 3, 7, 10, 14, 18];
 
 export function ServicePhotos() {
@@ -12,7 +11,7 @@ export function ServicePhotos() {
       {photos.map((item) => (
         <figure
           key={item.src}
-          className="relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10 bg-[#13252e]"
+          className="relative aspect-[4/3] overflow-hidden rounded-xl border border-[#c5a059]/10 bg-[#14171f]"
         >
           <Image
             src={item.src}
