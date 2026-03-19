@@ -31,6 +31,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/reviews" className="inline-block py-1.5 hover:text-[#7dc3cc]">
+                Reviews
+              </Link>
+            </li>
+            <li>
               <Link href="/contact" className="inline-block py-1.5 hover:text-[#7dc3cc]">
                 Contact
               </Link>

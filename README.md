@@ -25,6 +25,7 @@ npm start
 | `/` | Hero (photo background), services, why us, gallery preview, contact |
 | `/services` | Services detail + photo strip + why us |
 | `/gallery` | Full photo grid (`02.png` … `22.png`; `01.png` is the logo and not shown here) |
+| `/reviews` | All customer reviews (Facebook + Google) |
 | `/contact` | Contact form |
 
 ## Customize
