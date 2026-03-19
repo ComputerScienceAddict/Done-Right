@@ -14,7 +14,7 @@ function Stars() {
 function SourceBadge({ source }: { source: Review["source"] }) {
   const label = source === "google" ? "Google" : "Facebook";
   return (
-    <span className="rounded-full bg-[#c5a059]/10 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wider text-[#c5a059]">
+    <span className="rounded-full border border-neutral-200 bg-neutral-50 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wider text-neutral-600">
       {label}
     </span>
   );
@@ -22,23 +22,23 @@ function SourceBadge({ source }: { source: Review["source"] }) {
 
 function ReviewCard({ review }: { review: Review }) {
   return (
-    <article className="flex h-full min-h-0 flex-col rounded-2xl border border-[#c5a059]/10 bg-[#14171f] p-4 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.6)] sm:min-h-[260px] sm:p-6">
+    <article className="flex h-full min-h-0 flex-col rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm sm:min-h-[260px] sm:p-6">
       <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between sm:gap-2">
         <div className="min-w-0">
-          <p className="text-base font-semibold leading-tight text-[#f0ebe3] sm:text-[1.05rem]">{review.name}</p>
-          <p className="mt-1 text-xs text-[#5e5850]">{review.dateLabel}</p>
+          <p className="text-base font-semibold leading-tight text-neutral-900 sm:text-[1.05rem]">{review.name}</p>
+          <p className="mt-1 text-xs text-neutral-500">{review.dateLabel}</p>
         </div>
         <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
           <SourceBadge source={review.source} />
           {review.rating === 5 && <Stars />}
           {review.verified && (
-            <span className="rounded-full bg-[#c5a059]/10 px-2 py-0.5 text-[0.65rem] font-semibold text-[#e8d5b5]">
+            <span className="rounded-full border border-neutral-200 bg-neutral-50 px-2 py-0.5 text-[0.65rem] font-semibold text-neutral-600">
               Verified
             </span>
           )}
         </div>
       </div>
-      <blockquote className="mt-4 flex-1 border-l-2 border-[#c5a059]/30 pl-3 text-[0.9375rem] leading-relaxed text-[#c8c0b4] sm:pl-4 sm:text-sm">
+      <blockquote className="mt-4 flex-1 border-l-2 border-[#c5a059]/40 pl-3 text-[0.9375rem] leading-relaxed text-neutral-600 sm:pl-4 sm:text-sm">
         <p className="text-pretty [overflow-wrap:anywhere]">&ldquo;{review.text}&rdquo;</p>
       </blockquote>
     </article>
@@ -119,11 +119,11 @@ export function ReviewsCarousel({ items }: Props) {
     <div className="relative mt-8 sm:mt-12">
       <div className="relative -mx-4 sm:mx-0">
         <div
-          className="pointer-events-none absolute inset-y-0 left-0 z-10 w-6 bg-gradient-to-r from-[#0d1017] to-transparent sm:w-12 md:w-16"
+          className="pointer-events-none absolute inset-y-0 left-0 z-10 w-6 bg-gradient-to-r from-white to-transparent sm:w-12 md:w-16"
           aria-hidden
         />
         <div
-          className="pointer-events-none absolute inset-y-0 right-0 z-10 w-6 bg-gradient-to-l from-[#0d1017] to-transparent sm:w-12 md:w-16"
+          className="pointer-events-none absolute inset-y-0 right-0 z-10 w-6 bg-gradient-to-l from-white to-transparent sm:w-12 md:w-16"
           aria-hidden
         />
 
@@ -143,7 +143,7 @@ export function ReviewsCarousel({ items }: Props) {
               scrollToIndex(index + 1);
             }
           }}
-          className="touch-pan-x flex snap-x snap-mandatory gap-3 overflow-x-auto overflow-y-hidden scroll-smooth scroll-pl-[max(1rem,env(safe-area-inset-left))] scroll-pr-[max(1rem,env(safe-area-inset-right))] pb-3 pl-4 pr-4 pt-1 outline-none focus-visible:ring-2 focus-visible:ring-[#c5a059]/30 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0d1017] [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-4 sm:pb-4 sm:pt-2 [&::-webkit-scrollbar]:hidden"
+          className="touch-pan-x flex snap-x snap-mandatory gap-3 overflow-x-auto overflow-y-hidden scroll-smooth scroll-pl-[max(1rem,env(safe-area-inset-left))] scroll-pr-[max(1rem,env(safe-area-inset-right))] pb-3 pl-4 pr-4 pt-1 outline-none focus-visible:ring-2 focus-visible:ring-[#c5a059]/35 focus-visible:ring-offset-2 focus-visible:ring-offset-white [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-4 sm:pb-4 sm:pt-2 [&::-webkit-scrollbar]:hidden"
         >
           {items.map((review, i) => (
             <div
@@ -169,20 +169,20 @@ export function ReviewsCarousel({ items }: Props) {
             type="button"
             onClick={() => scrollToIndex(index - 1)}
             disabled={index <= 0}
-            className="inline-flex h-12 w-12 shrink-0 touch-manipulation items-center justify-center rounded-full border border-[#c5a059]/15 bg-[#14171f] text-[#c5a059] shadow-lg transition enabled:active:scale-95 enabled:hover:border-[#c5a059]/30 enabled:hover:bg-[#1a1e28] disabled:cursor-not-allowed disabled:opacity-35 sm:h-11 sm:w-11"
+            className="inline-flex h-12 w-12 shrink-0 touch-manipulation items-center justify-center rounded-full border border-neutral-200 bg-white text-[#c5a059] shadow-sm transition enabled:active:scale-95 enabled:hover:border-neutral-300 enabled:hover:bg-neutral-50 disabled:cursor-not-allowed disabled:opacity-35 sm:h-11 sm:w-11"
             aria-label="Previous review"
           >
             <ChevronLeft className="h-6 w-6 sm:h-5 sm:w-5" />
           </button>
-          <p className="min-w-0 flex-1 text-center text-base tabular-nums text-[#9a918a] sm:text-sm">
+          <p className="min-w-0 flex-1 text-center text-base tabular-nums text-neutral-500 sm:text-sm">
             <span className="font-semibold text-[#c5a059]">{index + 1}</span>
-            <span className="text-[#5e5850]"> / {total}</span>
+            <span className="text-neutral-400"> / {total}</span>
           </p>
           <button
             type="button"
             onClick={() => scrollToIndex(index + 1)}
             disabled={index >= total - 1}
-            className="inline-flex h-12 w-12 shrink-0 touch-manipulation items-center justify-center rounded-full border border-[#c5a059]/15 bg-[#14171f] text-[#c5a059] shadow-lg transition enabled:active:scale-95 enabled:hover:border-[#c5a059]/30 enabled:hover:bg-[#1a1e28] disabled:cursor-not-allowed disabled:opacity-35 sm:h-11 sm:w-11"
+            className="inline-flex h-12 w-12 shrink-0 touch-manipulation items-center justify-center rounded-full border border-neutral-200 bg-white text-[#c5a059] shadow-sm transition enabled:active:scale-95 enabled:hover:border-neutral-300 enabled:hover:bg-neutral-50 disabled:cursor-not-allowed disabled:opacity-35 sm:h-11 sm:w-11"
             aria-label="Next review"
           >
             <ChevronRight className="h-6 w-6 sm:h-5 sm:w-5" />
@@ -200,15 +200,15 @@ export function ReviewsCarousel({ items }: Props) {
               aria-current={i === index ? "true" : undefined}
               aria-label={`Go to review ${i + 1} of ${total}`}
               onClick={() => scrollToIndex(i)}
-              className={`flex min-h-[44px] min-w-[44px] shrink-0 touch-manipulation items-center justify-center rounded-full p-3 transition active:bg-[#c5a059]/5 ${
+              className={`flex min-h-[44px] min-w-[44px] shrink-0 touch-manipulation items-center justify-center rounded-full p-3 transition active:bg-neutral-100 ${
                 i === index ? "bg-[#c5a059]/10" : ""
               }`}
             >
               <span
                 className={`block rounded-full transition ${
                   i === index
-                    ? "h-2 w-8 bg-[#c5a059] shadow-[0_0_12px_rgba(197,160,89,0.35)]"
-                    : "h-2 w-2 bg-[#c5a059]/20"
+                    ? "h-2 w-8 bg-[#c5a059]"
+                    : "h-2 w-2 bg-neutral-300"
                 }`}
               />
             </button>

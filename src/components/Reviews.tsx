@@ -9,18 +9,17 @@ export function Reviews({ id = "reviews" }: Props) {
   return (
     <section
       id={id}
-      className="scroll-mt-24 overflow-x-hidden border-y border-[#c5a059]/10 bg-[#0d1017] px-4 py-14 sm:px-6 sm:py-20"
+      className="scroll-mt-24 overflow-x-hidden border-y border-neutral-200 bg-white px-4 py-14 sm:px-6 sm:py-20"
     >
       <div className="mx-auto max-w-6xl">
         <div className="max-w-2xl">
-          <p className="text-sm font-medium text-[#c5a059]">Reviews</p>
-          <h2 className="mt-2 text-2xl font-semibold tracking-tight text-[#f0ebe3] sm:text-4xl">
-            What clients say
+          <p className="text-sm font-medium text-[#b8923f]">Reviews</p>
+          <h2 className="mt-2 text-2xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
+            Word of mouth
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-[#9a918a] sm:text-base">
-            Real feedback from Facebook recommendations and Google reviews—Nicole and the team are
-            mentioned by name for thorough work, flexible scheduling, and homes that feel (and smell)
-            genuinely clean. Swipe or use the arrows to browse.
+          <p className="mt-4 text-sm leading-relaxed text-neutral-600 sm:text-base">
+            Pulled from Google and Facebook—people mention Nicole and the team by name. Swipe on your phone
+            or use the arrows below.
           </p>
         </div>
         <ReviewsCarousel items={items} />

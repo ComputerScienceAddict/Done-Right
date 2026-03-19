@@ -11,7 +11,7 @@ export function ServicePhotos() {
       {photos.map((item) => (
         <figure
           key={item.src}
-          className="relative aspect-[4/3] overflow-hidden rounded-xl border border-[#c5a059]/10 bg-[#14171f]"
+          className="relative aspect-[4/3] overflow-hidden rounded-xl border border-neutral-200 bg-neutral-100"
         >
           <Image
             src={item.src}
