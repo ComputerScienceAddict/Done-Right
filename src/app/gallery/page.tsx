@@ -14,7 +14,7 @@ export default function GalleryPage() {
         <p className="text-sm font-medium text-[#b8923f]">Gallery</p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-5xl">Photos</h1>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
-          Real jobs—kitchens, appliances, bathrooms, floors. Not stock photography.
+          Real jobs: kitchens, appliances, bathrooms, floors. Not stock photography.
         </p>
         <p className="mt-6">
           <Link

@@ -20,10 +20,12 @@ export function Hero() {
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500 sm:text-sm sm:tracking-[0.24em]">
           Homes & businesses
         </p>
-        <h1 className="mt-3 max-w-3xl text-[1.65rem] font-semibold leading-[1.2] tracking-tight text-neutral-900 sm:mt-4 sm:text-5xl sm:leading-tight lg:text-6xl">
-          A cleaner space,{" "}
+        <h1 className="mt-3 max-w-3xl text-balance sm:mt-4">
+          <span className="block text-[1.7rem] font-semibold leading-[1.15] tracking-tight text-neutral-900 sm:inline sm:text-5xl sm:leading-tight lg:text-6xl">
+            A cleaner space,
+          </span>{" "}
           <span
-            className={`${greatVibes.className} block pt-1 text-[2.1rem] font-normal leading-none text-[#c5a059] sm:inline sm:pt-0 sm:text-6xl lg:text-7xl`}
+            className={`${greatVibes.className} mt-1 inline-block align-bottom text-[2.35rem] font-normal leading-none text-[#c5a059] sm:mt-0 sm:text-6xl lg:text-7xl`}
           >
             done right
           </span>
@@ -47,20 +49,12 @@ export function Hero() {
             See what we do
           </Link>
         </div>
-        <dl className="mt-12 grid max-w-2xl grid-cols-3 gap-3 border-t border-neutral-200 pt-8 sm:mt-16 sm:gap-10 sm:pt-10">
-          <div className="min-w-0">
-            <dt className="text-[0.65rem] uppercase tracking-wider text-neutral-500 sm:text-xs">In business</dt>
-            <dd className="mt-1 truncate text-lg font-semibold text-neutral-900 sm:text-2xl">10+ yrs</dd>
-          </div>
-          <div className="min-w-0">
-            <dt className="text-[0.65rem] uppercase tracking-wider text-neutral-500 sm:text-xs">Area</dt>
-            <dd className="mt-1 truncate text-lg font-semibold text-[#c5a059] sm:text-2xl">Local</dd>
-          </div>
-          <div className="min-w-0">
-            <dt className="text-[0.65rem] uppercase tracking-wider text-neutral-500 sm:text-xs">Insured</dt>
-            <dd className="mt-1 truncate text-lg font-semibold text-neutral-900 sm:text-2xl">Yes</dd>
-          </div>
-        </dl>
+        <div className="mt-12 flex max-w-2xl flex-wrap items-baseline gap-x-2 gap-y-1 border-t border-neutral-200 pt-8 sm:mt-16 sm:pt-10">
+          <span className="text-[0.65rem] font-medium uppercase tracking-wider text-neutral-500 sm:text-xs">
+            Service area
+          </span>
+          <span className="text-xl font-semibold tracking-tight text-[#c5a059] sm:text-2xl">Local</span>
+        </div>
       </div>
     </section>
   );

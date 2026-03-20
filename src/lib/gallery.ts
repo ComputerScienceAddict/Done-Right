@@ -1,4 +1,4 @@
-/** Real job photos — `01.png` is the brand logo and is excluded; we use `02.png` … `22.png` only. */
+/** Real job photos: `01.png` is the brand logo and is excluded; we use `02.png` … `22.png` only. */
 export type GalleryItem = { src: string; alt: string };
 
 const ALT: string[] = [
@@ -31,10 +31,10 @@ export const galleryItems: GalleryItem[] = ALT.map((alt, i) => ({
   alt,
 }));
 
-/** Hero — `08.png` (kitchen wide shot) */
+/** Hero: `08.png` (kitchen wide shot) */
 export const heroImage = "/images/gallery/08.png";
 export const heroImageAlt =
   "Wide view of a modern kitchen with under-cabinet lighting after cleaning";
 
-/** Home preview — six shots spread across the set */
+/** Home preview: six shots spread across the set */
 export const previewIndices = [0, 3, 7, 11, 15, 19];

@@ -13,7 +13,7 @@ export function Footer() {
             Cleaning Services
           </p>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-neutral-600">
-            Local cleaning for homes and small businesses. Licensed and insured—ask when you call.
+            Local cleaning for homes and small businesses. Licensed and insured; ask when you call.
           </p>
         </div>
         <div>

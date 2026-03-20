@@ -18,7 +18,7 @@ export function Reviews({ id = "reviews" }: Props) {
             Word of mouth
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-neutral-600 sm:text-base">
-            Pulled from Google and Facebook—people mention Nicole and the team by name. Swipe on your phone
+            Pulled from Google and Facebook. People mention Nicole and the team by name. Swipe on your phone
             or use the arrows below.
           </p>
         </div>

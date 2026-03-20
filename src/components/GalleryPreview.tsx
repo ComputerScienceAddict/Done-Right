@@ -15,7 +15,7 @@ export function GalleryPreview() {
               Jobs we’ve photographed
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-600 sm:text-base">
-              A few kitchens, baths, and floors from real visits—not stock images.
+              A few kitchens, baths, and floors from real visits. Not stock images.
             </p>
           </div>
           <Link

@@ -2,17 +2,17 @@ const points = [
   {
     title: "We use a list",
     body:
-      "Each visit hits the same rough checklist—kitchen, baths, floors, handles. If you want the microwave inside every time, we write it down so nobody’s guessing.",
+      "Every visit covers the same basics: kitchen, bathrooms, floors, and handles. If you want something every time (like the inside of the microwave), we put it on paper so no one has to remember it from memory.",
   },
   {
     title: "Same crew when we can",
     body:
-      "We hire and train our own people—not whoever’s closest on an app. Codes, keys, weird parking—we note it once.",
+      "Our people work for us, not off a random app. Gate codes, keys, where to park: you tell us once and we keep it on file.",
   },
   {
-    title: "We’ll move the day if we have to",
+    title: "Flexible scheduling",
     body:
-      "Shops after close, apartments early, Saturdays if that’s what works. If we need to reschedule, we tell you. We don’t disappear on text.",
+      "Stores after closing, apartments before work, Saturdays when that fits. If we have to move a day, we call or text. We do not go silent.",
   },
 ];
 
@@ -27,9 +27,9 @@ export function WhyUs() {
               Straightforward cleaning
             </h2>
             <p className="mt-5 text-sm leading-relaxed text-neutral-600 sm:text-base">
-              On time, supplies in the truck unless you want otherwise. When we leave, it should smell like
-              clean—not perfume. Something missed? Say so and we’ll fix it on the next visit or come back if
-              it’s on us.
+              We show up when we say we will, with our own supplies unless you would rather we use yours.
+              When we are done, the place should smell like nothing fancy, just clean. If we miss something,
+              say so and we will make it right on the next visit or swing back if it was our oversight.
             </p>
           </div>
           <ul className="space-y-7 sm:space-y-8">

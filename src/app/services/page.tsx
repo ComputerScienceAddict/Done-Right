@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Homes, offices, and deep cleans—weekly visits, after-hours commercial, move-outs, and more.",
+    "Homes, offices, and deep cleans: weekly visits, after-hours commercial, move-outs, and more.",
 };
 
 export default function ServicesPage() {
@@ -18,7 +18,7 @@ export default function ServicesPage() {
           <p className="text-sm font-medium text-[#b8923f]">Services</p>
           <h1 className="mt-2 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-5xl">What we offer</h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
-            This is how we usually group the work. Your quote still starts with a quick call—tell us size,
+            This is how we usually group the work. Your quote still starts with a quick call. Tell us size,
             pets, and what you’re tired of cleaning yourself.
           </p>
           <Link
